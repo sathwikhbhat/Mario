@@ -14,6 +14,7 @@ public class LevelEditorScene extends Scene {
     @Override
     public void update(float dt) {
 
+        dt = 1.0f/60; //CoPilot suggested => Math.min(dt, 1.0f / 60.0f);
         System.out.println(1.0/dt);
 
         if(!changingScene && KeyListener.isKeyPressed(KeyEvent.VK_SPACE))
