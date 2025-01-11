@@ -60,7 +60,6 @@ public class Window {
 
         glfwFreeCallbacks(glfwWindow);
         glfwDestroyWindow(glfwWindow);
-
         glfwTerminate();
         glfwSetErrorCallback(null).free();
     }
